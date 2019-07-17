@@ -15,7 +15,7 @@ namespace winrt::TestWinrt::implementation
 
 	IAsyncAction MainPage::ClickHandler(IInspectable const&, RoutedEventArgs const&)
     {
-		winrt::apartment_context ui_thread; // Capture calling context.
+		winrt::apartment_context ui_thread;
 		co_await winrt::resume_background();
 		co_await ui_thread;
 
