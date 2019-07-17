@@ -1,0 +1,8 @@
+namespace TestWinrt
+{
+	[default_interface]
+	runtimeclass NOVAUtils
+	{
+		static Windows.Foundation.IAsyncOperation<String> CurrentLoginAsync();
+	}
+}
